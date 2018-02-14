@@ -121,12 +121,13 @@ public class TuneBook
 	{
 		int size = tunes.size();
 		Tune tune1;
+		String tuneTitle;
 
 		for ( int i = 0; i < size; i++ )
 		{
 			tune1 =  (Tune) tunes.get(i);
-
-			if ( tune1.equals( title ) )
+			tuneTitle = tune1.getTitle();
+			if ( tuneTitle.equals( title ) )
 			{
 				return tune1;
 			}

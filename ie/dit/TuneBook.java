@@ -75,7 +75,7 @@ public class TuneBook
 					secondTitle = false;
 				}
 
-				notation += line;
+				notation += line + "\n";
 
 			}
 		}
@@ -108,7 +108,7 @@ public class TuneBook
 		for ( int i = 0; i < size; i++ )
 		{
 			tune1 =  (Tune) tunes.get(i);
-			str += tune1.getNotation();
+			str += tune1.getNotation() + "\n\n";
 		}
 
 		return str;

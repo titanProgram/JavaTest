@@ -75,7 +75,10 @@ public class TuneBook
 					secondTitle = false;
 				}
 
-				notation += line + "\n";
+				if ( !firstSong )
+				{
+					notation += line + "\n";
+				}
 
 			}
 		}
